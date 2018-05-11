@@ -40,4 +40,4 @@
         ;;; Catch Ctrl+C and exit cleanly
         (parameterize-break #t
             (with-handlers ([exn:break? (lambda (x) (void))])
-            (read-many-wait-print (/ (string->number timeout) 1000))))))
+                (read-many-wait-print (/ (string->number timeout) 1000))))))
